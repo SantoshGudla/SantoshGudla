@@ -18,6 +18,7 @@ export class CompaniesComponent implements OnInit {
         this._userSvc.getData().subscribe(data => {
             this.mainListdata = data;
             this.modifydata();
+            
         });
     }
 
