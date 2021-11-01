@@ -1,0 +1,21 @@
+<div class="col-md-12">
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">S.No</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th>
+                <th scope="col">Contacts</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let obj of mainListdata; index as i">
+                <td>{{i+1}}</td>
+                <td>
+                    <img src='{{obj.logo}}'>{{obj.name}}</td>
+                <td>{{obj.description}}</td>
+                <td>{{obj.contacts}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
